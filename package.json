@@ -23,6 +23,7 @@
   "dependencies": {
     "grunt-contrib-jshint": "~0.7.1",
     "grunt-contrib-nodeunit": "~0.2.2",
-    "nodeunit": "~0.8.1"
+    "nodeunit": "~0.8.1",
+    "karma-safari-launcher": "~0.1.1"
   }
 }
