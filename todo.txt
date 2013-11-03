@@ -15,3 +15,9 @@ User Stories:
 - "hello world" client
 - support multiple browsers
 - marketing copy
+
+Engineering Tasks:
+- automated build
+- continuous integration
+- server-side testing
+- client-side testing
