@@ -11,11 +11,15 @@
             src: ["app.js", "Gruntfile.js"]
           }
         }
+      },
+      nodeunit: {
+        all: ["tests/*.js"]
       }
     });
     grunt.loadNpmTasks("grunt-contrib-jshint");
+    grunt.loadNpmTasks("grunt-contrib-nodeunit");
 
-    grunt.registerTask("default", "Default description", ["jshint"], function () {
+    grunt.registerTask("default", "Default description", ["jshint", "nodeunit"], function () {
       console.log("Hello world");
     });
 
