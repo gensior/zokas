@@ -19,9 +19,7 @@
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-contrib-nodeunit");
 
-    grunt.registerTask("lint", "Lint everything", "jshint");
-    grunt.registerTask("testcode", "Tests our node.js code", "nodeunit");
-    grunt.registerTask("default", "Lint and test", ["lint", "testcode"], function () {
+    grunt.registerTask("default", "Lint and test", ["jshint", "nodeunit"], function () {
       console.log("\n\nOK");
     });
 
