@@ -1,3 +1,17 @@
 ComicBaron
 
-Minimum Marketable Feature
+Minimum Marketable Features:
+- home page
+- basic api
+    - upload images
+    - list pages
+- create pages
+- reorder pages
+- edit pages
+- read pages
+
+User Stories:
+- "hello world" server
+- "hello world" client
+- support multiple browsers
+- marketing copy
