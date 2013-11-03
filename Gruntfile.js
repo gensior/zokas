@@ -19,8 +19,10 @@
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-contrib-nodeunit");
 
-    grunt.registerTask("default", "Default description", ["jshint", "nodeunit"], function () {
-      console.log("Hello world");
+    grunt.registerTask("lint", "Lint everything", "jshint");
+    grunt.registerTask("testcode", "Tests our node.js code", "nodeunit");
+    grunt.registerTask("default", "Lint and test", ["lint", "testcode"], function () {
+      console.log("\n\nOK");
     });
 
     function globalLintOptions() {
