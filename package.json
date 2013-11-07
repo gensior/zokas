@@ -20,6 +20,10 @@
     "karma-phantomjs-launcher": "~0.1.0",
     "karma": "~0.10.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gensior/zokas.git"
+  },
   "dependencies": {
     "grunt-contrib-jshint": "~0.7.1",
     "grunt-contrib-nodeunit": "~0.2.2",
