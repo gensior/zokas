@@ -18,7 +18,8 @@
     "karma-requirejs": "~0.1.0",
     "karma-coffee-preprocessor": "~0.1.0",
     "karma-phantomjs-launcher": "~0.1.0",
-    "karma": "~0.10.4"
+    "karma": "~0.10.4",
+    "mocha": "~1.14.0"
   },
   "dependencies": {
     "grunt-contrib-jshint": "~0.7.1",
