@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "grunt mochaTest"
+    "test": "grunt"
   },
   "author": "",
   "license": "BSD-2-Clause",

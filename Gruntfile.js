@@ -16,10 +16,9 @@
         test: {
           options: {
             reporter: 'landing',
-            growl: true,
             ui: 'tdd'
           },
-          src: ["**/test_*.js"]
+          src: ["./**/test_*.js"]
         }
       }
     });
