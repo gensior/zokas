@@ -18,7 +18,7 @@
             reporter: 'landing',
             ui: 'tdd'
           },
-          src: ["./**/test_*.js"]
+          src: ["test/**/*.js"]
         }
       }
     });
