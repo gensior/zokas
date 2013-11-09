@@ -22,6 +22,10 @@
     "mocha": "~1.14.0",
     "grunt-mocha-test": "~0.7.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gensior/zokas.git"
+  },
   "dependencies": {
     "grunt-contrib-jshint": "~0.7.1",
     "grunt-contrib-nodeunit": "~0.2.2",
