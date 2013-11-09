@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/abacus/.nvm/v0.10.21/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node-growl' ]
+2 info using npm@1.3.13
+3 info using node@v0.10.21
+4 warn package.json zokas@0.0.0 No description
+5 warn package.json zokas@0.0.0 No repository field.
+6 warn package.json zokas@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'node-growl', null ]
+9 verbose cache add name=undefined spec="node-growl" args=["node-growl",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'node-growl',
+10 verbose parsed url   path: 'node-growl',
+10 verbose parsed url   href: 'node-growl' }
+11 silly lockFile 0515e59b-node-growl node-growl
+12 verbose lock node-growl /Users/abacus/.npm/0515e59b-node-growl.lock
+13 silly lockFile 0515e59b-node-growl node-growl
+14 silly lockFile 0515e59b-node-growl node-growl
+15 verbose addNamed [ 'node-growl', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 73328e8a-node-growl node-growl@
+18 verbose lock node-growl@ /Users/abacus/.npm/73328e8a-node-growl.lock
+19 silly addNameRange { name: 'node-growl', range: '*', hasData: false }
+20 verbose url raw node-growl
+21 verbose url resolving [ 'https://registry.npmjs.org/', './node-growl' ]
+22 verbose url resolved https://registry.npmjs.org/node-growl
+23 info trying registry request attempt 1 at 01:40:39
+24 http GET https://registry.npmjs.org/node-growl
+25 http 404 https://registry.npmjs.org/node-growl
+26 silly registry.get cb [ 404,
+26 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+26 silly registry.get     date: 'Fri, 08 Nov 2013 09:40:39 GMT',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'content-length': '52',
+26 silly registry.get     'cache-control': 'must-revalidate' } ]
+27 silly lockFile 73328e8a-node-growl node-growl@
+28 silly lockFile 73328e8a-node-growl node-growl@
+29 error 404 'node-growl' is not in the npm registry.
+29 error 404 You should bug the author to publish it
+29 error 404
+29 error 404 Maybe try 'npm search growl'
+29 error 404
+29 error 404 Note that you can also install from a
+29 error 404 tarball, folder, or http url, or git url.
+30 error System Darwin 13.0.0
+31 error command "node" "/Users/abacus/.nvm/v0.10.21/bin/npm" "install" "node-growl"
+32 error cwd /Users/abacus/code/node/zokas
+33 error node -v v0.10.21
+34 error npm -v 1.3.13
+35 error code E404
+36 verbose exit [ 1, true ]

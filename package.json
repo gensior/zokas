@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "grunt nodeunit"
+    "test": "grunt mochaTest"
   },
   "author": "",
   "license": "BSD-2-Clause",
@@ -19,7 +19,8 @@
     "karma-coffee-preprocessor": "~0.1.0",
     "karma-phantomjs-launcher": "~0.1.0",
     "karma": "~0.10.4",
-    "mocha": "~1.14.0"
+    "mocha": "~1.14.0",
+    "grunt-mocha-test": "~0.7.0"
   },
   "dependencies": {
     "grunt-contrib-jshint": "~0.7.1",

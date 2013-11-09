@@ -12,14 +12,21 @@
           }
         }
       },
-      nodeunit: {
-        all: ["tests/*.js"]
+      mochaTest: {
+        test: {
+          options: {
+            reporter: 'landing',
+            growl: true,
+            ui: 'tdd'
+          },
+          src: ["**/test_*.js"]
+        }
       }
     });
     grunt.loadNpmTasks("grunt-contrib-jshint");
-    grunt.loadNpmTasks("grunt-contrib-nodeunit");
+    grunt.loadNpmTasks("grunt-mocha-test");
 
-    grunt.registerTask("default", "Lint and test", ["jshint", "nodeunit"], function () {
+    grunt.registerTask("default", "Lint and test", ["jshint", "mochaTest"], function () {
       console.log("\n\nOK");
     });
 
