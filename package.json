@@ -21,7 +21,8 @@
     "karma-phantomjs-launcher": "~0.1.0",
     "karma": "~0.10.4",
     "mocha": "~1.14.0",
-    "grunt-mocha-test": "~0.7.0"
+    "grunt-mocha-test": "~0.7.0",
+    "chai": "~1.8.1"
   },
   "repository": {
     "type": "git",
