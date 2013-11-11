@@ -22,7 +22,8 @@
     "karma": "~0.10.4",
     "mocha": "~1.14.0",
     "grunt-mocha-test": "~0.7.0",
-    "chai": "~1.8.1"
+    "chai": "~1.8.1",
+    "grunt-contrib-watch": "~0.5.3"
   },
   "repository": {
     "type": "git",
