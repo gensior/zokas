@@ -9,7 +9,6 @@
     server = http.createServer();
 
     server.on("request", function (request, response) {
-      response.statusCode = 404;
       response.end();
     });
 

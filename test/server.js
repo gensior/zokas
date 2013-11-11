@@ -2,7 +2,8 @@
   'use strict';
 
   // Test suite dependencies
-  var assert = require("assert");
+  var chai = require("chai");
+  var assert = chai.assert;
   var http = require("http");
 
   // Test function dependencies
@@ -24,8 +25,11 @@
       test("Server returns 'hello world'", function (done) {
         var request = http.get("http://localhost:8080");
         request.on("response", function (response) {
-          assert.equal(200, response.statusCode);
-          done();
+          assert.equal(200, response.statusCode, "Status code check");
+          response.on("data", function() {});
+          response.on("end", function () {
+            done();
+          });
         });
       });
     });
