@@ -11,7 +11,7 @@
 
   suite('NodeServer', function() {
     setup(function (){
-      server.start();
+      server.start(8080);
     });
 
     suite('Server running', function () {

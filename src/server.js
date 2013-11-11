@@ -3,16 +3,15 @@
 
   var http = require('http');
   var server;
-  var PORT = 8080;
 
-  exports.start = function () {
+  exports.start = function (portNumber) {
     server = http.createServer();
 
     server.on("request", function (request, response) {
       response.end("hello world");
     });
 
-    server.listen(PORT);
+    server.listen(portNumber);
   };
 
   exports.stop = function (callback) {
