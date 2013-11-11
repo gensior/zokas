@@ -8,18 +8,24 @@
   // Test function dependencies
   var server = require("../src/server.js");
 
-  suite('NodeServer', function(){
+  suite('NodeServer', function() {
     setup(function (){
       server.start();
     });
 
-    suite('Server running', function (){
+    suite('Server running', function () {
+
       test('Should return HTTP requests', function (done){
         http.get("http://localhost:8080", function (response) {
-          response.on('data', function (data) {
-            console.log("Data recieved.");
-            done();
-          });
+          done();
+        });
+      });
+
+      test("Server returns 'hello world'", function (done) {
+        var request = http.get("http://localhost:8080");
+        request.on("response", function (response) {
+          assert.equal(200, response.statusCode);
+          done();
         });
       });
     });

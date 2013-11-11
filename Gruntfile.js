@@ -15,7 +15,7 @@
       mochaTest: {
         test: {
           options: {
-            reporter: 'spec',
+            reporter: 'dot',
             ui: 'tdd'
           },
           src: ["test/**/*.js"]

@@ -2,27 +2,21 @@
   'use strict';
 
   var http = require('http');
-  var server = http.createServer();
+  var server;
   var PORT = 8080;
 
   exports.start = function () {
-    console.log("Server started.");
+    server = http.createServer();
 
     server.on("request", function (request, response) {
-      console.log("Received request.");
-      var body = "<html><head><title>Node HTTP Server</title></head>" +
-        "<body><p>This is a Node.js server.</p></body></html>";
-      response.end(body);
+      response.statusCode = 404;
+      response.end();
     });
 
-    server.listen(PORT, function () {
-      console.log("Listening on port "+ PORT + ".");
-    });
+    server.listen(PORT);
   };
 
-  exports.stop = function () {
-    server.close(function(){
-      console.log('Server stopped.');
-    });
+  exports.stop = function (callback) {
+    server.close(callback);
   };
 })();
