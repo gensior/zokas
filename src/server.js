@@ -5,6 +5,8 @@
   var server;
 
   exports.start = function (portNumber) {
+    if (!portNumber) throw "Port number (portNumber) is required.";
+
     server = http.createServer();
 
     server.on("request", function (request, response) {
