@@ -9,7 +9,7 @@
     server = http.createServer();
 
     server.on("request", function (request, response) {
-      response.end();
+      response.end("hello world");
     });
 
     server.listen(PORT);

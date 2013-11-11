@@ -4,6 +4,15 @@
   module.exports = function(grunt) {
 
     grunt.initConfig({
+      watch: {
+        scripts: {
+          files: ['./src/**/*.js', './test/**/*.js'],
+          tasks: ['jshint', 'mochaTest'],
+          options: {
+            spawn: true
+          }
+        }
+      },
       jshint: {
         main: {
           options: nodeLintOptions(),
@@ -18,12 +27,13 @@
             reporter: 'dot',
             ui: 'tdd'
           },
-          src: ["test/**/*.js"]
+          src: ["./test/**/*.js"]
         }
       }
     });
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-mocha-test");
+    grunt.loadNpmTasks("grunt-contrib-watch");
 
     grunt.registerTask("default", "Lint and test", ["jshint", "mochaTest"], function () {
       console.log("\n\nOK");

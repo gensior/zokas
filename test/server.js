@@ -16,18 +16,18 @@
 
     suite('Server running', function () {
 
-      test('Should return HTTP requests', function (done){
-        http.get("http://localhost:8080", function (response) {
-          done();
-        });
-      });
-
       test("Server returns 'hello world'", function (done) {
         var request = http.get("http://localhost:8080");
         request.on("response", function (response) {
+          var receivedData = false;
           assert.equal(200, response.statusCode, "Status code check");
-          response.on("data", function() {});
+          response.on("data", function(chunk) {
+            receivedData = true;
+            response.setEncoding("utf8");
+            assert.equal("hello world", chunk);
+          });
           response.on("end", function () {
+            assert.ok(receivedData, "Should have received response data.");
             done();
           });
         });
